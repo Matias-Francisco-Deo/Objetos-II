@@ -29,18 +29,20 @@ class Desarmador {
 
 	@Test
 	void test() {
-		int max = -1;
+		int max = -1;// inicializo los comparadores generales 
 		int maxEven = -1;
-		for (int num:list) {
+		
+		
+		for (int num:list) { // por cada num
 			int evens = 0;
 			int current = num; 
 			int dig = 0;
 			while (current > 0) {
 				
-				dig++;
+				dig++; //cuento sus digs
 				current /= 10;
 			}
-			current = num;
+			current = num; 
 //			System.out.print(dig);
 //			System.out.print(" ");
 			
@@ -49,14 +51,14 @@ class Desarmador {
 			int power = 1;
 			int count = 1;
 			while (count < dig) {
-				power = power*10;
+				power = power*10; //me fijo la potencia con los dígitos
 				count++;
 			}
 			
 			count = 1; 
 			
 			while (count <= dig) {
-				
+				//empiezo desde el final (si 23, empiezo por 2)
 				
 //				int powercnt = 1;
 //				
@@ -73,8 +75,8 @@ class Desarmador {
 //				System.out.print(" digit ");
 //				System.out.print(digit);
 				
-				current = current - digit * power;
-				power /= 10;
+				current = current - digit * power; // quito el anterior número para poder ver el siguiente dígito limpio
+				power /= 10; //bajo la potencia
 				System.out.print(" ");
 //				System.out.print(current);
 				
@@ -93,7 +95,7 @@ class Desarmador {
 			
 		}
 		System.out.print(max);
-		assertEquals(2, 2);
+		assertEquals(666666666, max);
 	}
 
 }
