@@ -35,11 +35,7 @@ class Múltiplos {
 //				current = current + mult;
 //			}
 		}	
-		
-		System.out.print(current);
-		System.out.print(" ");
-		System.out.print(mult);
-		
+		current = current;
 //		return current;
 	}
 

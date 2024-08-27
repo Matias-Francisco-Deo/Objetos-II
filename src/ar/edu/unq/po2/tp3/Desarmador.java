@@ -77,7 +77,6 @@ class Desarmador {
 				
 				current = current - digit * power; // quito el anterior número para poder ver el siguiente dígito limpio
 				power /= 10; //bajo la potencia
-				System.out.print(" ");
 //				System.out.print(current);
 				
 				if (digit % 2 == 0) {
