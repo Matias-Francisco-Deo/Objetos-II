@@ -6,11 +6,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class Múltiplos {
-
+	
+	Integer pepe;
+//	private int pepe2;
+	
 	@BeforeEach
 	void setUp() throws Exception {
 	}
-	
+	/**
+	 * 
+	 * @param x String
+	 * @param y Array
+	 * @return pepe
+	 */
 	public int getMúltiplo(int x, int y) {
 		int i = -1;
 		if (x % y == 0) {
@@ -25,9 +33,10 @@ class Múltiplos {
 	void test() {
 		int x = 9;
 		int y = 3;
-		
 		int mult = getMúltiplo(x, y);
-			
+		int p;
+		Integer z;
+//		pepe2 = this.pepe;
 		int current = mult;
 		while (mult != -1 && current + mult < 1000) {
 			current = current + mult;
@@ -35,7 +44,7 @@ class Múltiplos {
 //				current = current + mult;
 //			}
 		}	
-		current = current;
+//		current = current;
 //		return current;
 	}
 
