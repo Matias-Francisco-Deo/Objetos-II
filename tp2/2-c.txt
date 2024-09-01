@@ -1,0 +1,2 @@
+No es necesario modificar la clase Empresa, ya que esta toma a todos los Empleados como iguales. A través del polimorfismo, se logra que el tipo nuevo de 
+empleado pueda existir igualmente (ya que se usa el mismo mensaje para añadirlo a la empresa, y los mismos para los cálculos).
