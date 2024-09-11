@@ -163,9 +163,8 @@ def test02():
     roberto = EmpleadoPermanente(nombre="Roberto", antigüedad=2, dirección="Dean Funes 125", estadoCivil= "Casado", fechaDeNacimiento=date(2000, 1, 1), sueldoBásico=2000, cantidadHijos=2)
     pepe = EmpleadoTemporario(cantidadDeHorasExtra=2, fechaDeFin=date(2025, 1, 1), nombre="pepe", dirección="Lavalle 500", estadoCivil="Soltero", fechaDeNacimiento=date(1995, 12, 3), sueldoBásico=1000)
     agustín = EmpleadoTemporario(cantidadDeHorasExtra=5, fechaDeFin=date(2026, 5, 1), nombre="agustín", dirección="San Martín 506", estadoCivil="Casado", fechaDeNacimiento=date(2000, 12, 3), sueldoBásico=1000)
-    miguel = EmpleadoContratado(númeroDeContrato="0001", medioDePago="Tarjeta", nombre="miguel", dirección="Belgrano 5000", estadoCivil="Soltero", fechaDeNacimiento=date(1998, 12, 1), sueldoBásico=1000)
     
-    empleados = [roberto, pepe, agustín, miguel]
+    empleados = [roberto, pepe, agustín]
     
     empresa = Empresa(cuit="20232466", nombre="Corpus inc.")
 
@@ -189,11 +188,10 @@ def test01():
     roberto = EmpleadoPermanente(nombre="Roberto", antigüedad=2, dirección="Dean Funes 125", estadoCivil= "Casado", fechaDeNacimiento=date(2000, 1, 1), sueldoBásico=2000, cantidadHijos=2)
     juan = EmpleadoPermanente(nombre="Juan", antigüedad=5, dirección="Dean Funes 850", estadoCivil= "Soltero", fechaDeNacimiento=date(1980, 5, 6), sueldoBásico=2500, cantidadHijos=0)
     pepe = EmpleadoTemporario(cantidadDeHorasExtra=2, fechaDeFin=date(2025, 1, 1), nombre="pepe", dirección="Lavalle 500", estadoCivil="Soltero", fechaDeNacimiento=date(1998, 12, 3), sueldoBásico=1000)
-    rich = EmpleadoContratado(númeroDeContrato="0000", medioDePago="Tarjeta", nombre="rich", dirección="Belgrano 5000", estadoCivil="Casado", fechaDeNacimiento=date(1995, 12, 1), sueldoBásico=15000)
 
     empresa = Empresa(cuit="20232444", nombre="San Juan inc.")
     
-    empleados = [roberto, pepe, juan, rich]
+    empleados = [roberto, pepe, juan]
 
     for empleado in empleados:
         empresa.contratarEmpleado(empleado)
@@ -212,4 +210,4 @@ def test01():
     print("----------------------------------------------------------")
 
 
-test01()
+test02()
