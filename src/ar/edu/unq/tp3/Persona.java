@@ -7,7 +7,7 @@ public class Persona {
 	private String nombre;
 	private LocalDate fechaDeNacimiento;
 	
-	Persona(String nombre, LocalDate fechaDeNacimiento) {
+	public Persona(String nombre, LocalDate fechaDeNacimiento) {
 		this.nombre = nombre;
 		this.fechaDeNacimiento = fechaDeNacimiento;
 	}

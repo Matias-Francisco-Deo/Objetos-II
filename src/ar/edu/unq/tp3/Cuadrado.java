@@ -6,7 +6,7 @@ public class Cuadrado {
 	private Point esquinaSuperiorIzq;
 	private Point esquinaSuperiorDer;
 	
-	Cuadrado() {
+	public Cuadrado() {
 		this.esquinaInferiorIzq = new Point(0, 0);
 		this.esquinaInferiorDer = new Point(1, 0);
 		this.esquinaSuperiorIzq = new Point(0, 1);

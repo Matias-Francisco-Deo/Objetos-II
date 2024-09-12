@@ -6,7 +6,7 @@ public class Rectángulo {
 	private Point esquinaSuperiorIzq;
 	private Point esquinaSuperiorDer;
 	
-	Rectángulo() {
+	public Rectángulo() {
 		this.esquinaInferiorIzq = new Point();
 		this.esquinaInferiorDer = new Point(2, 0);
 		this.esquinaSuperiorIzq = new Point(0, 1);

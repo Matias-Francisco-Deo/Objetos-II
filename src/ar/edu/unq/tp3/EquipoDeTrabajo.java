@@ -6,7 +6,7 @@ public class EquipoDeTrabajo {
 	private String nombre;
 	private List<Persona> personas;
 	
-	EquipoDeTrabajo(String nombre, List<Persona> personas ) {
+	public EquipoDeTrabajo(String nombre, List<Persona> personas ) {
 		this.nombre = nombre;
 		this.personas = personas;
 	}
