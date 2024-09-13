@@ -1,0 +1,6 @@
+Es una forma más acotada de """""herencia""""", creando un protocolo común para diversas clases.
+No se debería porque las clases son para protocolo y estructura, y lo único que se necesita en esos casos es un protocolo. Básicamente es trabajar de más.
+También define estructura.
+No
+Porque al cambiarlas, hay que cambiar también en cada una de los clases que le implementen.
+Porque es debilmente tipado.
