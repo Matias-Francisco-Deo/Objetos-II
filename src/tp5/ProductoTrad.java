@@ -6,9 +6,14 @@ public class ProductoTrad extends Producto {
 		super(stock, precio);
 	}
 
+//	@Override
+//	public float precioDe(int cantidad) {
+//		return cantidad*getPrecio();
+//	}
+
 	@Override
-	public float precioDe(int cantidad) {
-		return cantidad*getPrecio();
+	public float getPrecioTotal() {
+		return getPrecio();
 	}
 
 }

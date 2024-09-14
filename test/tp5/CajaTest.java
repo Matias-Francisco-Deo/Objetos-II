@@ -10,8 +10,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CajaTest {
-	List<Producto> productos = new ArrayList<Producto>();
-	Caja caja = new Caja();
+	List<Pagable> productos = new ArrayList<Pagable>();
+	Caja caja = new Caja(null);
 	Producto banana = new ProductoTrad(5, 500);
 	Producto ananá = new ProductoTrad(2, 900);
 	Producto peras = new ProductoTrad(59878, 2);
@@ -35,7 +35,7 @@ class CajaTest {
 
 	@Test
 	void test() {
-		assertEquals(5402, caja.getTotal(), 0.1);
+		assertEquals(5202, caja.getTotal(), 0.01);
 		assertEquals(0, banana.getStock());
 		assertEquals(1, ananá.getStock());
 		assertEquals(59877, peras.getStock());

@@ -1,6 +1,6 @@
 package tp5;
 
-public abstract class Producto {
+public abstract class Producto implements Pagable{
 	private int stock;
 	private float precio;
 
@@ -16,11 +16,16 @@ public abstract class Producto {
 	public float getPrecio() {
 		return precio;
 	}
+	
 	public void decrementarStock(int cantidad) {
 		stock -= cantidad;
 	}
 	
-	abstract public float precioDe(int cantidad);
+//	abstract public float precioDe(int cantidad);
+	
+	public void registrar(Caja caja) {
+		this.decrementarStock(1);
+	}
 
 
 }
