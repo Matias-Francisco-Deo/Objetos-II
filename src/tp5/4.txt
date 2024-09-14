@@ -1,0 +1,17 @@
+Persona:unNombre:unaFechaDeNacimiento
+nombre := unNombre
+fechaDeNacimiento := unaFechaDeNacimiento
+
+Persona>>getNombre
+^self.nombre
+
+Persona>>getFechaNacimiento
+^self.fechaDeNacimiento
+
+Persona>>getEdad
+^self.fechaDeNacimiento.year - date.today.year
+
+Persona>><:unaPersona
+self.edad < unaPersona.edad
+
+

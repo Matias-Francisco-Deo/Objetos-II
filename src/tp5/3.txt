@@ -1,0 +1,5 @@
+En caso de cambiar cada letra por las interfaces o clases:
+
+-Collection, directamente no funcionaría porque hay métodos que son incompatibles.
+-List, todos funcionarían y harían cada una de las funciones correctamente, aunque en cada caso, distinta.
+-ArrayList y LinkedList funcionarían también, pero se quedarían cortos, podría funcionar con más tipos de listas, y no hay necesidad de restringirlo.
