@@ -3,15 +3,46 @@ nombre := unNombre
 fechaDeNacimiento := unaFechaDeNacimiento
 
 Persona>>getNombre
-^self.nombre
+^self nombre
 
 Persona>>getFechaNacimiento
-^self.fechaDeNacimiento
+^self fechaDeNacimiento
 
 Persona>>getEdad
-^self.fechaDeNacimiento.year - date.today.year
+^self fechaDeNacimiento.year - date.today.year
 
 Persona>><:unaPersona
-self.edad < unaPersona.edad
+self edad < unaPersona.edad
+
+
+Mascota:unNombre:unaRaza
+nombre := unNombre
+raza := unaRaza
+
+Mascota>>getNombre
+^self nombre
+
+Persona>>getRaza
+^self raza
+
+
+juanito := Mascota new juanito golden
+
+pepe := Persona new pepe 10/10/10
+
+list := List new add pepe add juanito
+
+//iteración
+
+4-lo permite el polimorfismo
+
+5- a- sí, utilizando superclases abstractas que envuelvan el comportamiento
+	b- No se puede
+	c- Se podría con interfaces, ya que permiten la herencia múltiple 
+
+
+
+
+
 
 
