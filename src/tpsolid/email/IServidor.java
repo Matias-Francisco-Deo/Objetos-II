@@ -2,7 +2,7 @@ package tpsolid.email;
 
 import java.util.List;
 
-public interface IServidor {
+public interface IServidor  {
 	
 	public List<Correo> recibirNuevos(String user, String pass);
 
@@ -10,10 +10,5 @@ public interface IServidor {
 
 	public void enviar(Correo correo);
 	
-	public float tazaDeTransferencia();
-
-	public void resetear();
-	
-	public void realizarBackUp();
 
 }

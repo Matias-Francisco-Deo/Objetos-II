@@ -1,5 +1,5 @@
 S ClienteEMail tiene demasiadas responsabilidades. (tal vez IServidor también) -> Lo separaría en dos clases, una SesiónEmail, otra UsuarioEmail   
 O las variables en ClienteEMail son públicas -> tener getters y setters, con variables privadas. (O?) 
 L ServidorPop no utiliza todos los métodos de IServidor -> utilizar una sola inferfaz IServidor con menos métodos.
-I La interface de IServidor es muy abarcativa. -> separar en dos interfaces a IServidor, una IServidor con menos métodos, y una IServidorDistante.
-D El clienteEMail recibe sólamente servidores POP -> permitir que reciba una clase ServidorEmail, más general
+I La interface de IServidor es muy abarcativa. -> separar en dos interfaces a IServidor, una IServidor con menos métodos, y una IDistante.
+D El clienteEMail recibe sólamente servidores POP -> permitir que reciba un IServidor, más general
