@@ -11,6 +11,7 @@ public class Banco {
 	}
 	
 	public void otorgarCrédito(SolicitudDeCrédito solicitud) {
+		//dice "agregar nuevas sol de crédito", pero tipo, ya es bastante general, no?
 		if (solicitud.realizarChequeo()) {
 			//aprobado
 			solicitud.enviarSaldo();
@@ -20,5 +21,6 @@ public class Banco {
 	
 	public void afiliarCliente(Cliente cliente) {
 		clientes.add(cliente);
+		cliente.setBancoAfiliado(this);
 	}
 }

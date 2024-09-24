@@ -1,5 +1,6 @@
 package tpsolid.banco;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
@@ -9,7 +10,7 @@ public class Cliente {
 	private int edad;
 	private float sueldoNeto;
 	private float saldo;
-	private List<SolicitudDeCrédito> solicitudes;
+	private List<SolicitudDeCrédito> solicitudes = new ArrayList<SolicitudDeCrédito>();
 	private List<PropiedadInmobiliaria> propiedades;
 	private Banco bancoAfiliado;
 	
@@ -29,14 +30,14 @@ public class Cliente {
 		return sueldoNeto * 12;
 	}
 	
-	public void solicitarCréditoHipotecario(float monto, int plazoMeses, PropiedadInmobiliaria propiedad) {
-		SolicitudDeCrédito crédito = new SolicitudDeCréditoHipotecario(this, monto, plazoMeses, propiedad);
-		bancoAfiliado.otorgarCrédito(crédito);
+	public void solicitarCrédito(SolicitudDeCrédito solicitud) {
+		
+		bancoAfiliado.otorgarCrédito(solicitud);
+		solicitudes.add(solicitud);
 	}
 	
-	public void solicitarCréditoPersonal(float monto, int plazoMeses) {
-		SolicitudDeCrédito crédito = new SolicitudDeCréditoPersonal(this, monto, plazoMeses);
-		bancoAfiliado.otorgarCrédito(crédito);
+	public void setBancoAfiliado(Banco banco) {
+		this.bancoAfiliado = banco;
 	}
 
 	public float getSueldoNeto() {
