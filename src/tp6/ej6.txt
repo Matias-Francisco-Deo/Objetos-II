@@ -1,0 +1,39 @@
+PREGUNTAR POR LOS TIPOS DE ADAPTER
+
+
+1. Existe más de un tipo de adaptadores, mencione y explique cada uno de ellos.
+Existe el Class Adapter, el Object Adapter, Plugglable Adapter, Two-Way adapter
+2. ¿En qué se diferencia un tipo de adaptador del otro?
+a- Permite adaptar a el Adaptee usando herencia
+b- Este adapter puede adaptar varios a la vez
+c- Serían clases con adaptación usando interfaces.
+d- Sería una clase que adapta varios adaptees a la vez, formando un objeto del mismo tipo.
+
+3. ¿Se pueden utilizar ambas alternativas de implementación del patrón en java? Justifique la respuesta.
+Si, porque una usa herencia (presente en java) y la otra utiliza Objetos, también presentes.
+
+4. Ver la interface Enumeration de java y la clase Vector, preste atención a que dicha
+clase contiene un método "elements()". Explique cómo funciona el patrón adapter
+y cuáles son los roles de los participantes entre la interface y clase mencionada.
+Mencione qué tipo de implementación del patrón se utiliza.
+
+La clase Vector tiene el método elements() que devuelve al tipo Enumeration.
+En este caso, es un Object Adapter, que adapta a Vector para poder ser recorrible en el tipo Enumeration.
+
+
+5. Realice el mismo análisis del punto 3, pero con la interface Iterator, la clase
+ArrayList (preste atención al método "iterator()"). Muestre un ejemplo de
+funcionamiento y especifique los roles de cada participante.
+
+Lo mismo, es un Object Adapter que genera un iterador de tipo Iterador para recorrer la ArrayList.
+ArrayList<Persona> personas;
+Iterator<ArrayList<Persona>> it = personas.iterator();
+int count = 0;
+if (it.hasNext()) {
+	count++;
+	it.next();
+}
+
+
+6. Implemente un Adaptador, que adapte un Iterator a un Enumeration. Escribir
+código que utilice dicha implementación adaptando un ArrayList.
