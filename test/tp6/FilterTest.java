@@ -10,6 +10,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
+import tp7.MismaLetraInicial;
+import tp7.Wikipedia;
+import tp7.WikipediaPage;
+
 class FilterTest {
 	MismaLetraInicial filtro;
 	WikipediaPage Bernal;

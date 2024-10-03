@@ -1,4 +1,7 @@
-package tp6;
+package tp7;
+
+import tp6.Filtro;
+import tp7.WikipediaPage;
 
 public class MismaLetraInicial extends Filtro {
 

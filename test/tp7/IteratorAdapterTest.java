@@ -1,4 +1,4 @@
-package tp6;
+package tp7;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import tp7.IteratorAdapter;
 
 public class IteratorAdapterTest {
 	private IteratorAdapter it;

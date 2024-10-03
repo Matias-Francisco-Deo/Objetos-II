@@ -1,0 +1,4 @@
+En este caso, elements() devuelva un Enumeration para poder realizar un recorrido contando los objetos del vector.
+El adapter es el método elements(), el adaptado es el Vector, y la adaptación devuelve un Enumeration.
+Esta implementación es del tipo objeto.
+

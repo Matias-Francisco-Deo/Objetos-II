@@ -1,6 +1,8 @@
-package tp6;
+package tp7;
 
 import java.util.List;
+
+import tp7.WikipediaPage;
 
 public class Wikipedia {
 	List<WikipediaPage> páginas;

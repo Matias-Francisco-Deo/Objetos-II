@@ -1,4 +1,4 @@
-package tp6;
+package tp7;
 import java.util.List;
 import java.util.Map;
 
