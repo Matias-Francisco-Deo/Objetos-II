@@ -4,25 +4,25 @@ public abstract class SolicitudDeCrédito {
 	private Cliente cliente;
 	private float monto;
 	private int plazoMeses;
-	
+
 	SolicitudDeCrédito(Cliente cliente, float monto, int plazoMeses) {
 		this.setCliente(cliente);
 		this.monto = monto;
 		this.plazoMeses = plazoMeses;
 	}
-	
+
 	public void enviarSaldo() {
-		cliente.enviarSaldo(monto);
+		cliente.recibirSaldo(monto);
 	}
-	
+
 	public float getMontoMensual() {
 		return monto;
 	}
-	
+
 	public float getMontoTotal() {
 		return monto * plazoMeses;
 	}
-	
+
 	abstract boolean realizarChequeo();
 
 	public Cliente getCliente() {
@@ -31,5 +31,5 @@ public abstract class SolicitudDeCrédito {
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
-	} 
+	}
 }
