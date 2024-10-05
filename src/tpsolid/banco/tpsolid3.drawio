@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1189" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -49,7 +49,7 @@
         <mxCell id="NT7tVy54fO97-N1tHfUs-72" value="+ new(float)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontStyle=4" parent="NT7tVy54fO97-N1tHfUs-69" vertex="1">
           <mxGeometry y="60" width="250" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="BIyKIama6yedB04cpU8d-0" value="+ registrarSolicitud(float)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="NT7tVy54fO97-N1tHfUs-69" vertex="1">
+        <mxCell id="BIyKIama6yedB04cpU8d-0" value="+ registrarSolicitud(SolicitudDeCrédito)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="NT7tVy54fO97-N1tHfUs-69" vertex="1">
           <mxGeometry y="106" width="250" height="26" as="geometry" />
         </mxCell>
         <mxCell id="NT7tVy54fO97-N1tHfUs-73" value="+ otorgarCrédito(SolicitudDeCrédito, Cliente)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="NT7tVy54fO97-N1tHfUs-69" vertex="1">
@@ -79,7 +79,7 @@
         <mxCell id="NT7tVy54fO97-N1tHfUs-119" value="+ new(Cliente, float, int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontStyle=4" parent="NT7tVy54fO97-N1tHfUs-75" vertex="1">
           <mxGeometry y="112" width="200" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="pCyhc1h9vkHFl_OKamn_-0" value="+ enviarSaldo()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NT7tVy54fO97-N1tHfUs-75">
+        <mxCell id="pCyhc1h9vkHFl_OKamn_-0" value="+ enviarSaldo()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="NT7tVy54fO97-N1tHfUs-75" vertex="1">
           <mxGeometry y="140" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="NT7tVy54fO97-N1tHfUs-118" value="+ getMontoTotal()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="NT7tVy54fO97-N1tHfUs-75" vertex="1">

@@ -1,9 +1,5 @@
 package tp8;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Stream;
-
 public class ActividadSemanal {
 	private DíaDeLaSemana dia;
 	private int horaInicio;
@@ -17,7 +13,7 @@ public class ActividadSemanal {
 		this.setHoraInicio(horaInicio);
 	}
 
-	private Deporte getDeporte() {
+	public Deporte getDeporte() {
 		return deporte;
 	}
 
@@ -33,7 +29,7 @@ public class ActividadSemanal {
 		this.horaInicio = horaInicio;
 	}
 
-	private int getDuración() {
+	public int getDuración() {
 		return duración;
 	}
 
@@ -56,24 +52,10 @@ public class ActividadSemanal {
 		return precio + (this.deporte.getComplejidad() * 200);
 	}
 
-	public List<ActividadSemanal> todasActsFútbol(List<ActividadSemanal> list) {
-		Stream<ActividadSemanal> stream = list.stream();
-		return stream.filter(act -> act.getDeporte() == Deporte.FUTBOL).toList();
+	@Override
+	public String toString() {
+		return String.format("Deporte: %s, Día: %s a las %d. Duración: %d hora(s)", this.deporte, this.dia,
+				this.duración, this.horaInicio);
 	}
 
-	public List<ActividadSemanal> todasDeComplejidad(List<ActividadSemanal> list, int complejidad) {
-		Stream<ActividadSemanal> stream = list.stream();
-		return stream.filter(act -> act.getDeporte().getComplejidad() == complejidad).toList();
-	}
-
-	public int horasTotales(List<ActividadSemanal> list) {
-		Stream<ActividadSemanal> stream = list.stream();
-		return stream.mapToInt(act -> act.duración).sum();
-	}
-
-	public ActividadSemanal horasTotales(List<ActividadSemanal> list, Deporte deporte) {
-		Stream<ActividadSemanal> stream = list.stream();
-		return stream.filter(act -> act.getDeporte() == deporte)
-				.min(Comparator.comparingInt(ActividadSemanal::getDuración)).orElse(null);
-	}
 }
