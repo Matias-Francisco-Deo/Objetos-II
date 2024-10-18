@@ -1,0 +1,4 @@
+1- Se hace con clases recursivas (composición recursiva), donde la clase abstracta representa a las primitvas y a sus contenedores.
+2- Se utiliza para representar jerarquías de objetos que tienen objetos que son parte de él, y objetos que a su vez son parte y encapsulan todo. Por otro lado
+para que los clientes puedan ignorar las diferencias entre composición de objetos y objetos sueltos. Se tratan a todos por igual.
+3- el polimorfismo

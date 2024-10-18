@@ -1,0 +1,4 @@
+Compartir instancias no afecta al resultado; se trata como si fuera un objeto aparte.
+
+las alternativas que se me ocurren: aumentar el precio de todo a *4 (como si fuera la parcela total), luego en cada subdivisión /4. Otra sería hacer un /4 en cada subdivisión, pero hacer una parcela por encima que actúe como parcela base, manteniendo los precios de trigo y soja normales. No sé cómo las relacionaría.
+Nadie debería porque no hay necesidad (??) yo utilizo constructores para limitar que hayan 4 o nada (que es lo que pide el enunciado) por lo que no se agrega o quita nunca.
