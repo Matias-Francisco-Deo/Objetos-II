@@ -1,0 +1,16 @@
+En el caso del observer simple, la ventaja es la sencillo que es. Envía información directamente, sin especificar qué es lo que notifica, lo que puede hacer más difícil de leer. 
+A su vez, solamente consta de un observado, lo cual limita su capacidad.
+
+El segundo caso, el observer complejo tiene como ventaja que puede enviar información más variada, explicando qué es cada evento que ocurre al receptor. El lado negativo es que se debe controlar con un if, y que llegarán eventos que no sean los interesados para los observadores.
+Sigue sin poder depender de varios observados.
+
+En ninguno de los anteriores se hace una distinción entre los objetos suscriptos.
+
+El tercer caso, el observer complejo con listener permite evitar los if, mandando mensajes donde cada suscriptor decide si utilizar luego. Se hace con una interfaz al suscriptor.
+La desventaja sería la cantidad y complejidad de código, además de una baja en la performance (al tener que iterar tanto)
+En ningún caso se depende de varios observados.
+
+
+En caso que un observer quiera suscribirse a varios sensores, por ejemplo, lo que debería hacerse es que cada observable envíe un objeto Evento con los detalles del evento, para poder diferenciar uno de otro.
+// PREGUNTAR
+
