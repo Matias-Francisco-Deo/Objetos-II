@@ -13,6 +13,13 @@ public class AplicaciónDistributiva {
 	}
 
 	public void registrarSuscriptorDeDeportes(SuscriptorDeDeportes sus, List<Deporte> list) {
+		for (Deporte dep : list) {
+			for (EventoDeporte evt : eventosDeporte) {
+				if (evt.esDelMismoDeporteQue(dep)) {
+					evt.registrarSuscriptor(sus);
+				}
+			}
+		}
 
 	}
 
