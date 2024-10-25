@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="767" dy="2056" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="853" dy="1064" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -29,31 +29,28 @@
           <mxGeometry y="104" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-8" value="AplicaciónDistributiva" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="340" width="330" height="182" as="geometry" />
-        </mxCell>
-        <mxCell id="YLucaJetifnq5HeN7Emp-9" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="26" width="330" height="26" as="geometry" />
+          <mxGeometry x="20" y="340" width="380" height="150" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="52" width="330" height="8" as="geometry" />
+          <mxGeometry y="26" width="380" height="8" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-11" value="+ ingresarPartido(Partido)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="60" width="330" height="26" as="geometry" />
+          <mxGeometry y="34" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-53" value="+ registrarNuevoDeporte(EventoDeporte)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="86" width="330" height="26" as="geometry" />
+          <mxGeometry y="60" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-28" value="+ registrarSuscriptorDeDeportes(SuscriptorDeDeportes,&amp;nbsp;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;List&amp;lt;Deporte&amp;gt;&lt;/span&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="112" width="330" height="44" as="geometry" />
+          <mxGeometry y="86" width="380" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="YLucaJetifnq5HeN7Emp-29" value="+ registrarSuscriptorDeContrincantes(Servidor)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
-          <mxGeometry y="156" width="330" height="26" as="geometry" />
+        <mxCell id="YLucaJetifnq5HeN7Emp-29" value="+ registrarSuscriptorDeContrincantes(SuscriptorFiltroContrincante)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YLucaJetifnq5HeN7Emp-8" vertex="1">
+          <mxGeometry y="130" width="380" height="20" as="geometry" />
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-17" value="suscriptoresDeDeportes" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YLucaJetifnq5HeN7Emp-42" target="YLucaJetifnq5HeN7Emp-30" edge="1">
-          <mxGeometry x="0.1597" y="15" relative="1" as="geometry">
+          <mxGeometry x="0.5181" y="10" relative="1" as="geometry">
             <mxPoint x="370" y="460" as="sourcePoint" />
             <mxPoint x="530" y="460" as="targetPoint" />
-            <mxPoint y="-1" as="offset" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YLucaJetifnq5HeN7Emp-18" value="n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="YLucaJetifnq5HeN7Emp-17" connectable="0" vertex="1">
@@ -98,16 +95,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YLucaJetifnq5HeN7Emp-38" value="suscriptoresDeContrincantes" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YLucaJetifnq5HeN7Emp-8" target="YLucaJetifnq5HeN7Emp-33" edge="1">
+        <mxCell id="YLucaJetifnq5HeN7Emp-38" value="suscriptoresDeContrincantes" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YLucaJetifnq5HeN7Emp-53" target="W-htROMY6K7B8j7rfrve-1" edge="1">
           <mxGeometry x="0.228" y="10" relative="1" as="geometry">
             <mxPoint x="375" y="408" as="sourcePoint" />
             <mxPoint x="910" y="-10" as="targetPoint" />
             <mxPoint x="1" as="offset" />
             <Array as="points">
-              <mxPoint x="330" y="340" />
-              <mxPoint x="330" y="-10" />
-              <mxPoint x="1010" y="-10" />
-              <mxPoint x="1010" y="30" />
+              <mxPoint x="350" y="340" />
+              <mxPoint x="450" y="340" />
+              <mxPoint x="450" y="350" />
+              <mxPoint x="615" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -156,8 +153,46 @@
         <mxCell id="YLucaJetifnq5HeN7Emp-56" value="+ enviarPartido(Partido)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="460" y="144" width="330" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qjMBp-wqHB62pxYt0D1_-0" value="no se me ocurre cómo hacer contrincante" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="qjMBp-wqHB62pxYt0D1_-0" value="no se me ocurre cómo hacer contrincante" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="80" y="40" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-0" value="+ enviarPartido(Partido)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="850" y="144" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-1" value="SuscriptorFiltroContrincante" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="480" y="390" width="270" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-2" value="+ contrincante: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="W-htROMY6K7B8j7rfrve-1" vertex="1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-Bqxxuh_PRGeMdJPlaiS-0" value="+ suscriptor: SuscriptorDeContrincantes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="W-htROMY6K7B8j7rfrve-1">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="W-htROMY6K7B8j7rfrve-1" vertex="1">
+          <mxGeometry y="78" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-4" value="+ notificar(Partido)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="W-htROMY6K7B8j7rfrve-1" vertex="1">
+          <mxGeometry y="86" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-Bqxxuh_PRGeMdJPlaiS-1" value="+ recibirPartido(Partido)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="W-htROMY6K7B8j7rfrve-1">
+          <mxGeometry y="112" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-6" value="suscriptor" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.572;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="W-htROMY6K7B8j7rfrve-0" edge="1">
+          <mxGeometry x="0.3366" y="25" relative="1" as="geometry">
+            <mxPoint x="760" y="454.5" as="sourcePoint" />
+            <mxPoint x="1025" y="431.5" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="760" y="382" />
+              <mxPoint x="860" y="382" />
+              <mxPoint x="860" y="392" />
+              <mxPoint x="1025" y="392" />
+              <mxPoint x="1025" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W-htROMY6K7B8j7rfrve-7" value="n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="W-htROMY6K7B8j7rfrve-6" connectable="0" vertex="1">
+          <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

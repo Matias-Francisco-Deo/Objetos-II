@@ -35,6 +35,7 @@ public class Participante {
 	}
 
 	public void comenzarPartida(List<Pregunta> preguntas) {
+		this.getJuego().empezar();
 		this.setPreguntas(preguntas);
 		this.setPosPreguntaActual(0);
 	}
@@ -61,7 +62,7 @@ public class Participante {
 
 	public void responderPregunta(Pregunta preguntaActual, String respuesta) {
 		this.setPosPreguntaActual(posPreguntaActual + 1);
-		this.getJuego().enviarRespuestaDe(this, respuesta);
+		this.getJuego().enviarRespuestaDe(this, preguntaActual, respuesta);
 	}
 
 	public int getPuntaje() {
@@ -82,6 +83,16 @@ public class Participante {
 
 	public void mostrarCorrecta(Pregunta pregunta, Participante participante) {
 		System.out.print(pregunta.getPregunta() + " Respondida por: " + participante.getNombre());
+	}
+
+	public void mostrarGanador(Participante participante) {
+		System.out.print(participante.getNombre() + " es ganador!");
+
+	}
+
+	public boolean estáPorÚltimaPregunta() {
+
+		return this.getPosPreguntaActual() == 5;
 	}
 
 }

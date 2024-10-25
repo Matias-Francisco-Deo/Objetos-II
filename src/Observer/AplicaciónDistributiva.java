@@ -6,6 +6,7 @@ import java.util.List;
 public class AplicaciónDistributiva {
 
 	private List<EventoDeporte> eventosDeporte = new ArrayList<EventoDeporte>();
+	private List<SuscriptorFiltroContincante> suscriptoresDeContrincantes = new ArrayList<SuscriptorFiltroContincante>();
 
 	public void registrarNuevoDeporte(EventoDeporte evt) {
 		this.eventosDeporte.add(evt);
@@ -29,6 +30,13 @@ public class AplicaciónDistributiva {
 				evt.notificar(partido);
 			}
 		}
+		for (SuscriptorFiltroContincante sus : suscriptoresDeContrincantes) {
+			sus.recibirPartido(partido);
+		}
+	}
+
+	public void registrarSuscriptorDeContrincantes(SuscriptorFiltroContincante sus) {
+		this.suscriptoresDeContrincantes.add(sus);
 
 	}
 
