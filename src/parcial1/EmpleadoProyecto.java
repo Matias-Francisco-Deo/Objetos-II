@@ -1,4 +1,4 @@
-package parciales;
+package parcial1;
 
 public interface EmpleadoProyecto {
 	public String nombre();

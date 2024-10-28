@@ -1,4 +1,4 @@
-package parciales;
+package parcial1;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

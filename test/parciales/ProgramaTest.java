@@ -9,6 +9,10 @@ import java.time.LocalDate;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import parcial1.EmpleadoProyecto;
+import parcial1.Programa;
+import parcial1.Proyecto;
+
 class ProgramaTest {
 	Programa programaRoot;
 	Programa programa2;

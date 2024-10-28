@@ -1,4 +1,4 @@
-package parciales;
+package parcial1;
 
 public class SecretaríaAdapter extends SecretaríaDeInfraestructura implements Secretaría {
 

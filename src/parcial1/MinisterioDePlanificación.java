@@ -1,4 +1,4 @@
-package parciales;
+package parcial1;
 
 import java.util.ArrayList;
 import java.util.List;
